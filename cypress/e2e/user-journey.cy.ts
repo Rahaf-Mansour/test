@@ -26,5 +26,8 @@ describe("User Journey", () => {
     cy.getByData("challenge-answer-0").should("exist").click()
     cy.getByData("next-lesson-button").click()
     cy.location("pathname").should("eq", "/")
+    cy.log("hello from console")
+    console.log("hi")
+    cy.screenshot()
   })
 })
