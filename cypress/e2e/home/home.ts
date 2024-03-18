@@ -23,27 +23,3 @@ When("User clicks on Get Started link for {string}", (courseId) => {
 Then("User should be redirected to {string}", (coursePath) => {
   cy.location("pathname").should("eq", coursePath)
 })
-
-// When("User clicks on the Get started link for the first course", () => {
-//   cy.getByData("course-0").find("a").contains("Get Started").click()
-// })
-
-// Then("User should be redirected to the correct first course path", () => {
-//   cy.location("pathname").should("eq", "/testing-your-first-application")
-// })
-
-// When("User clicks on the Get started link for the second course", () => {
-//   cy.getByData("course-1").find("a").contains("Get Started").click()
-// })
-
-// Then("User should be redirected to the correct second course path", () => {
-//   cy.location("pathname").should("eq", "/testing-foundations")
-// })
-
-// When("User clicks on the Get started link for the third course", () => {
-//   cy.getByData("course-2").find("a").contains("Get Started").click()
-// })
-
-// Then("User should be redirected to the correct third course path", () => {
-//   cy.location("pathname").should("equal", "/cypress-fundamentals")
-// })

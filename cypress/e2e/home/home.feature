@@ -12,12 +12,6 @@ Feature: Home page
         Given User visits the website
         Then The features on the homepage are correct
 
-    # Scenario: Clicking on any course from the courses section should navigate the user to the correct path
-    #     Given User visits the website
-    #     When User clicks on Get Started link for any offered courses
-    #     Then User should be redirected to the correct course page
-
-
     Scenario: Clicking on <courseId> from the courses section should navigate the user to the correct path
         Given User visits the website
         When User clicks on Get Started link for "<courseId>"
